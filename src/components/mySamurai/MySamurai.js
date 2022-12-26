@@ -21,7 +21,7 @@ const MySamurai = styled(Stack)((props) => ({
 const SettingButton = styled(Button)((props) => ({
   fontFamily: 'QuinqueFive',
   border: "1px solid #ffffff50",
-  fontSize: "12px",
+  fontSize: "8px",
   height: "26px",
   color: props.isSettingMode ? "#000" : "#fff",
   backgroundColor: props.isSettingMode ? "#fff" : "#000",
