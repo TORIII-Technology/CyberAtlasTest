@@ -19,6 +19,7 @@ const MySamurai = styled(Stack)((props) => ({
 }))
 
 const SettingButton = styled(Button)((props) => ({
+  fontFamily: 'QuinqueFive',
   border: "1px solid #ffffff50",
   fontSize: "12px",
   height: "26px",
@@ -74,24 +75,23 @@ export default function MySamuraiThemeUsage(props) {
     <MySamurai>
       <Title
         icon={<SamuraiIcon fontSize="large" />}
-        // button={
-        //   nfts.length > 0 && (
-        //     <SettingPFPButton
-        //       isSettingMode={isSettingMode}
-        //       toggleSettingMode={toggleSettingMode}
-        //       handleChangePFP={handleChangePFP}
-        //       selectedSamurai={selectedSamurai}
-        //     />
-        //   )
-        // }
       >
         Certified NFT
       </Title>
-      <MainButton
-        link="https://www.katanansamurai.art/"
+      <Title
+        button={
+          nfts.length > 0 && (
+            <SettingPFPButton
+              isSettingMode={isSettingMode}
+              toggleSettingMode={toggleSettingMode}
+              handleChangePFP={handleChangePFP}
+              selectedSamurai={selectedSamurai}
+            />
+          )
+        }
       >
-        change PFP
-      </MainButton>
+      </Title>
+      
       <SamuraiList
         nfts={nfts}
         isSettingMode={isSettingMode}
