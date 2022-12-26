@@ -2,6 +2,7 @@ import { Link as RouterLink } from "react-router-dom"
 import { Link, styled } from "@mui/material"
 
 const MenuLink = styled(Link)((props) => ({
+  fontFamily: 'QuinqueFive',
   color: "white",
   fontWeight: "500",
   // textUnderlineOffset: props.isExternal ? 0 : "2px",

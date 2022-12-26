@@ -25,8 +25,7 @@ const theme = createTheme({
   },
 
   typography: {
-    // fontFamily: '"Noto Sans TC", sans-serif',
-    fontFamily: 'QuinqueFive',
+    fontFamily: '"Noto Sans TC", sans-serif',
     body12: {
       fontSize: "12px",
       wordWrap: "break-word",
