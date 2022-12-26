@@ -18,7 +18,7 @@ export default function ThemeUsage(props) {
     <TitleGroup>
       <Title spacing="12px" direction="row">
         {props.icon}
-        <Typography component="h3" variant="heading28medium">
+        <Typography component="h3" variant="body16mediumPixel">
           {props.children}
         </Typography>
       </Title>

@@ -21,10 +21,10 @@ export default function SamuraiPurChaseThemeUsage(props) {
         textAlign="center"
       >
         {isOwningSamurai
-          ? "If you want get more SAMURAI, you could get one on opensea."
-          : "You're not a SAMURAI yet, please get one samurai on opensea."}
+          ? "If you want get more partners' NFT, you could get one on opensea."
+          : "You're not on our partner list, please get one of our partners' NFT on opensea."}
       </Typography>
-      <Stack
+      {/* <Stack
         paddingTop="20px"
         spacing="24px"
         direction="row"
@@ -43,7 +43,7 @@ export default function SamuraiPurChaseThemeUsage(props) {
         >
           OPENSEA
         </MainButton>
-      </Stack>
+      </Stack> */}
     </SamuraiPurChase>
   )
 }

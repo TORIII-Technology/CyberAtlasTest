@@ -23,7 +23,7 @@ export default function MyPostThemeUsage(props) {
 
   return (
     <MyPost>
-      <Title icon={<RamenIcon fontSize="large" />}>my yamato post</Title>
+      <Title icon={<RamenIcon fontSize="large" />}>my posts</Title>
       {posts.total ? (
         <PostList posts={posts.posts} path="me" />
       ) : (

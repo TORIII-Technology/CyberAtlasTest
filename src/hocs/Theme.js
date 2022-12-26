@@ -42,6 +42,25 @@ const theme = createTheme({
       color: "white",
       textTransform: "uppercase",
     },
+    body12Pixel: {
+      fontFamily: 'QuinqueFive',
+      fontSize: "12px",
+      wordWrap: "break-word",
+      color: "white",
+    },
+    body16mediumPixel: {
+      fontFamily: 'QuinqueFive',
+      fontSize: "16px",
+      fontWeight: "500",
+      color: "white",
+    },
+    heading24mediumPixel: {
+      fontFamily: 'QuinqueFive',
+      fontSize: "24px",
+      fontWeight: "500",
+      color: "white",
+      textTransform: "uppercase",
+    },
     menu: {
       fontFamily: 'QuinqueFive',
       fontSize: "16px",
