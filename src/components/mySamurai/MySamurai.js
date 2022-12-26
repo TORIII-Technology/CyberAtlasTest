@@ -7,6 +7,8 @@ import Title from "components/mySamurai/Title"
 import SamuraiList from "components/mySamurai/SamuraiList"
 import SamuraiIcon from "components/icons/SamuraiIcon"
 import SamuraiPurchase from "components/mySamurai/SamuraiPurchase"
+import MainButton from "components/buttons/MainButton"
+
 
 const MySamurai = styled(Stack)((props) => ({
   alignItems: "center",
@@ -72,19 +74,24 @@ export default function MySamuraiThemeUsage(props) {
     <MySamurai>
       <Title
         icon={<SamuraiIcon fontSize="large" />}
-        button={
-          nfts.length > 0 && (
-            <SettingPFPButton
-              isSettingMode={isSettingMode}
-              toggleSettingMode={toggleSettingMode}
-              handleChangePFP={handleChangePFP}
-              selectedSamurai={selectedSamurai}
-            />
-          )
-        }
+        // button={
+        //   nfts.length > 0 && (
+        //     <SettingPFPButton
+        //       isSettingMode={isSettingMode}
+        //       toggleSettingMode={toggleSettingMode}
+        //       handleChangePFP={handleChangePFP}
+        //       selectedSamurai={selectedSamurai}
+        //     />
+        //   )
+        // }
       >
         Certified NFT
       </Title>
+      <MainButton
+        link="https://www.katanansamurai.art/"
+      >
+        change PFP
+      </MainButton>
       <SamuraiList
         nfts={nfts}
         isSettingMode={isSettingMode}
