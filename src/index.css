@@ -1,0 +1,54 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/images/cooker.png");
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: opacity(0.25);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.react-p5-wrapper {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  /* background-color: rgba(138,43,226,1); */
+}
+
+
+@media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+@font-face {
+  font-family: "QuinqueFive";   /*Can be any text*/
+  src: local("QuinqueFive"),
+    url("./fonts/quinquefive/QuinqueFive.ttf") format("truetype");
+}

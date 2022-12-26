@@ -1,0 +1,9 @@
+{
+  "zoomControl": true,
+  "mapTypeControl": false,
+  "scaleControl": true,
+  "streetViewControl": false,
+  "rotateControl": true,
+  "fullscreenControl": false,
+  "clickableIcons": false
+}

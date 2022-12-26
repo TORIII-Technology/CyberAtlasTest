@@ -1,0 +1,124 @@
+.marker__container {
+  /* outline for debuging the position */
+  /* outline: 1px solid red; */
+  font-family: "Noto Sans tc", sans-serif;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  z-index: 99;
+}
+.marker__img__container {
+  z-index: 97;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  background-color: black;
+  border: 1px solid #fff;
+  flex: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*校正定位*/
+  left: -30px;
+  bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.25);
+}
+.marker__container::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 1px;
+  transform: rotate(45deg) skew(12deg, 12deg);
+
+  width: 20px;
+  height: 20px;
+
+  top: -28px;
+  left: -11px;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.marker__img__body {
+  z-index: 97;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+.marker__content {
+  position: absolute;
+
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.marker__content.top {
+  z-index: 96;
+  width: 100px;
+  height: 18px;
+  padding-left: 10px;
+  top: -56px;
+  left: 3px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.marker__content.btm {
+  width: 95px;
+  height: 18px;
+  padding-left: 32px;
+  padding-top: 0.5ch;
+  top: -40px;
+  left: 0px;
+  color: white;
+  background-color: black;
+  border-radius: 4px 0 4px 4px;
+  gap: 2.5px;
+  display: flex;
+  align-items: baseline;
+}
+/*-18 +7*/
+.main__text {
+  padding: 0.25ch 0 0.25ch 20px;
+  display: inline-block;
+  line-height: 18px;
+  max-width: 98px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  zoom: 85%;
+}
+
+.rate__icon {
+  width: 8px;
+  height: 8px;
+  background-image: url(assets/images/blossomIcon.svg);
+  background-repeat: no-repeat;
+}
+
+.secondary__text {
+  line-height: 18px;
+  margin: 0;
+  font-size: 12px;
+  zoom: 75%;
+}
+
+.rate__text {
+  font-weight: bolder;
+}
+
+.reviews__text {
+  max-width: 10ch;
+  color: #747474;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
