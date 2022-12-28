@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Box, styled } from "@mui/material"
 import { useSpring, animated } from "react-spring"
-import door from "assets/images/door.png"
+// import door from "assets/images/door.png"
 import SideContainer from "./SideContainer"
 
 const AnimatedBox = animated(Box)
@@ -22,16 +22,16 @@ const DoorContainer = styled(AnimatedBox)((props) => ({
 }))
 
 
-const DoorImage = styled("div")((props) => ({
-  width: "100%",
-  height: "100%",
-  position: "absolute",
-  right: "0",
-  backgroundImage: `url(${door})`,
-  backgroundPosition: "center right",
-  backgroundSize: "cover",
-  transform: props.direction === "right" && "scaleX(-1)",
-}))
+// const DoorImage = styled("div")((props) => ({
+//   width: "100%",
+//   height: "100%",
+//   position: "absolute",
+//   right: "0",
+//   backgroundImage: `url(${door})`,
+//   backgroundPosition: "center right",
+//   backgroundSize: "cover",
+//   transform: props.direction === "right" && "scaleX(-1)",
+// }))
 
 
 const Door = () => {

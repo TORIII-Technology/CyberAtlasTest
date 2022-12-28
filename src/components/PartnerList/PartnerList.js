@@ -3,7 +3,9 @@ import { ImageList, ImageListItem } from "@mui/material"
 import PostItem from "components/postList/PostItem"
 
 import theLastRamen from "assets/images/partner/theLastRamen.jpg"
+import demiHuman from "assets/images/partner/demiHuman.png"
 import kojirou from "assets/images/partner/kojirou.jpg"
+
 
 const partners = [
   {
@@ -13,6 +15,10 @@ const partners = [
   {
     name: "kojirou",
     img: kojirou,
+  },
+  {
+    name: "demiHuman",
+    img: demiHuman,
   },
 ]
 
