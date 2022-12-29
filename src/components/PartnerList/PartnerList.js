@@ -11,14 +11,17 @@ const partners = [
   {
     name: "theLastRamen",
     img: theLastRamen,
+    site:"https://www.katanansamurai.art/",
   },
   {
     name: "kojirou",
     img: kojirou,
+    site:"https://www.instagram.com/kojiroutaipei/",
   },
   {
     name: "demiHuman",
     img: demiHuman,
+    site:"https://www.demiverse.io/",
   },
 ]
 
@@ -27,7 +30,13 @@ const PartnerList = () => {
     <ImageList sx={{ width: "100%" }} cols={3} gap={8}>
       {partners.map((partner) => (
         <ImageListItem key={partner.name}>
-          <PostItem img={partner.img} />
+          <a
+            target="_blank"
+            rel="noreferrer noopenner"
+            href={partner.site}
+            >
+            <PostItem img={partner.img} />
+          </a>
         </ImageListItem>
       ))}
     </ImageList>
