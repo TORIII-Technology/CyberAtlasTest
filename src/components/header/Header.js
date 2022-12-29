@@ -55,7 +55,7 @@ export default function ThemeUsage(props) {
     <Header>
       <Stack direction="row" alignItems="center" spacing={2}>
         <HeaderDrawer />
-        <Image height="16px" src={logoMap} />
+        <Image height="12px" src={logoMap} />
       </Stack>
       <Stack direction="row" alignItems="center" spacing="16px">
         {!isLoading && state.isAuth && <UserData user={state.user} />}
