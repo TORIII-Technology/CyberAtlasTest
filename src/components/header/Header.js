@@ -8,10 +8,9 @@ import { useOwnedNFTs } from "services/apis/nft"
 // import DoorIcon from "components/icons/DoorIcon"
 import { AuthContext } from "components/context/AuthContext"
 import HeaderDrawer from "components/header/HeaderDrawer"
-import Image from "components/Image"
-import logoMap from "assets/images/logoMap.svg"
+// import Image from "components/Image"
+// import logoMap from "assets/images/logoMap.svg"
 import cooker from "assets/images/cooker.png"
-import Title from "components/mySamurai/Title"
 import { encodeToken } from "libs/string/encodeToken"
 
 const Header = styled("div")(({ theme }) => ({
