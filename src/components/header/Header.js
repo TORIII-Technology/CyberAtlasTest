@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 // import { Link } from "react-router-dom"
 import { styled } from "@mui/material/styles"
-import { Stack, Avatar, Link as MuiLink } from "@mui/material"
+import { Stack, Avatar, Link, Typography } from "@mui/material"
 
 import { useOwnedNFTs } from "services/apis/nft"
 // import MetaMaskIcon from "components/icons/MetaMaskIcon"
@@ -12,7 +12,6 @@ import Image from "components/Image"
 import logoMap from "assets/images/logoMap.svg"
 import cooker from "assets/images/cooker.png"
 import Title from "components/mySamurai/Title"
-
 import { encodeToken } from "libs/string/encodeToken"
 
 const Header = styled("div")(({ theme }) => ({
@@ -23,7 +22,7 @@ const Header = styled("div")(({ theme }) => ({
   margin: "0 auto",
   display: "flex",
   alignItems: "center",
-  justifyContent: "space-between",
+  // justifyContent: "space-between",
   borderBottom: `1px solid ${theme.palette.main.divider}`,
   color: theme.palette.primary.text,
   backgroundColor: "black",
@@ -54,19 +53,19 @@ export default function ThemeUsage(props) {
 
   return (
     <Header>
-      <Stack direction="row" alignItems="center" spacing={2}>
+      <Stack direction="row" alignItems="center" justifyContent={"flex-end"} spacing={2}>
         <HeaderDrawer />
-        <Image
+        {/* <Image
           left="42px"
           right="100"
           position="absolute"
           margin="0 auto"
           width="224px"
           src={logoMap}
-        />
-        {/* <Title align="left">
+        /> */}
+        <Typography variant="body16mediumPixel">
           CYBER ATLAS
-        </Title> */}
+        </Typography>
       </Stack>
       <Stack direction="row" alignItems="center" spacing="16px">
         {!isLoading && state.isAuth && <UserData user={state.user} />}
