@@ -22,7 +22,7 @@ const Header = styled("div")(({ theme }) => ({
   margin: "0 auto",
   display: "flex",
   alignItems: "center",
-  // justifyContent: "space-between",
+  justifyContent: "space-between",
   borderBottom: `1px solid ${theme.palette.main.divider}`,
   color: theme.palette.primary.text,
   backgroundColor: "black",
@@ -53,7 +53,7 @@ export default function ThemeUsage(props) {
 
   return (
     <Header>
-      <Stack direction="row" alignItems="center" justifyContent={"flex-end"} spacing={2}>
+      <Stack direction="row" alignItems="center" spacing={2}>
         <HeaderDrawer />
         {/* <Image
           left="42px"
