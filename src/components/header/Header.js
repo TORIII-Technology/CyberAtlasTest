@@ -1,16 +1,17 @@
 import React, { useContext } from "react"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { styled } from "@mui/material/styles"
 import { Stack, Avatar, Link as MuiLink } from "@mui/material"
 
 import { useOwnedNFTs } from "services/apis/nft"
-import MetaMaskIcon from "components/icons/MetaMaskIcon"
-import DoorIcon from "components/icons/DoorIcon"
+// import MetaMaskIcon from "components/icons/MetaMaskIcon"
+// import DoorIcon from "components/icons/DoorIcon"
 import { AuthContext } from "components/context/AuthContext"
 import HeaderDrawer from "components/header/HeaderDrawer"
 import Image from "components/Image"
 import logoMap from "assets/images/logoMap.svg"
 import cooker from "assets/images/cooker.png"
+import Title from "components/mySamurai/Title"
 
 import { encodeToken } from "libs/string/encodeToken"
 
@@ -55,7 +56,17 @@ export default function ThemeUsage(props) {
     <Header>
       <Stack direction="row" alignItems="center" spacing={2}>
         <HeaderDrawer />
-        <Image width="200px" src={logoMap} />
+        <Image
+          left="42px"
+          right="100"
+          position="absolute"
+          margin="0 auto"
+          width="224px"
+          src={logoMap}
+        />
+        {/* <Title align="left">
+          CYBER ATLAS
+        </Title> */}
       </Stack>
       <Stack direction="row" alignItems="center" spacing="16px">
         {!isLoading && state.isAuth && <UserData user={state.user} />}
