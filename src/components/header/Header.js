@@ -63,7 +63,7 @@ export default function ThemeUsage(props) {
           src={logoMap}
         /> */}
         <Typography variant="body16mediumPixel">
-          CYBER ATLAS
+          CYBER-MYTH
         </Typography>
       </Stack>
       <Stack direction="row" alignItems="center" spacing="16px">

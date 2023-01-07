@@ -18,7 +18,7 @@ import cyberAuthLogo from "assets/images/cyberauth.png"
 
 const MenuList = [
   {
-    title: "ATLAS",
+    title: "MAP",
     to: "",
   },
   {
