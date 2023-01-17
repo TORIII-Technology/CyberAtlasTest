@@ -12,6 +12,15 @@ import { ButtonBase, CircularProgress, Stack, Typography } from "@mui/material"
 import Image from "components/Image"
 import metaMask from "assets/images/metaMask.png"
 
+function openMetaMaskUrl(url) {
+  const a = document.createElement("a");
+  a.href = url;
+  a.target = "_self";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+
 const FullpageContainer = styled(Stack)(() => ({
   height: "100%",
   alignItems: "center",
@@ -43,7 +52,8 @@ const LoginPage = () => {
   const handleSignIn = useCallback(async () => {
     if (isAndroid || isIOS) {
       if (!window.ethereum || !window.ethereum.isMetaMask) {
-        window.location = process.env.REACT_APP_REDIRECT_URL
+        // window.location = process.env.REACT_APP_REDIRECT_URL
+        openMetaMaskUrl(process.env.REACT_APP_REDIRECT_URL)
         return
       }
     }
