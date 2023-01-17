@@ -52,8 +52,8 @@ const LoginPage = () => {
   const handleSignIn = useCallback(async () => {
     if (isAndroid || isIOS) {
       if (!window.ethereum || !window.ethereum.isMetaMask) {
-        // window.location = process.env.REACT_APP_REDIRECT_URL
-        openMetaMaskUrl(process.env.REACT_APP_REDIRECT_URL)
+        window.location.replace(process.env.REACT_APP_REDIRECT_URL)
+        // openMetaMaskUrl(process.env.REACT_APP_REDIRECT_URL)
         return
       }
     }
